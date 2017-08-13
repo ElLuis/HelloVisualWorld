@@ -1,6 +1,6 @@
 ﻿namespace HelloVisualWorld
 {
-    partial class Form1
+    partial class HelloForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.displayOutputButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // displayOutputButton
+            // 
+            this.displayOutputButton.Location = new System.Drawing.Point(100, 150);
+            this.displayOutputButton.Name = "displayOutputButton";
+            this.displayOutputButton.Size = new System.Drawing.Size(75, 23);
+            this.displayOutputButton.TabIndex = 0;
+            this.displayOutputButton.Text = "Click here";
+            this.displayOutputButton.UseVisualStyleBackColor = true;
+            // 
+            // HelloForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(478, 381);
+            this.Controls.Add(this.displayOutputButton);
+            this.Name = "HelloForm";
+            this.Text = "Hello Visual World";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button displayOutputButton;
     }
 }
 

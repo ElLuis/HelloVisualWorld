@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HelloVisualWorld
 {
-    public partial class Form1 : Form
+    public partial class HelloForm : Form
     {
-        public Form1()
+        public HelloForm()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
