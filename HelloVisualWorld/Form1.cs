@@ -21,5 +21,10 @@ namespace HelloVisualWorld
         {
 
         }
+
+        private void displayOutputButton_Click(object sender, EventArgs e)
+        {
+            helloLabel.Visible = true;
+        }
     }
 }
