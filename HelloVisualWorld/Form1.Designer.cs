@@ -30,6 +30,7 @@
         {
             this.displayOutputButton = new System.Windows.Forms.Button();
             this.helloLabel = new System.Windows.Forms.Label();
+            this.changeOutputButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // displayOutputButton
@@ -45,18 +46,32 @@
             // helloLabel
             // 
             this.helloLabel.AutoSize = true;
-            this.helloLabel.Enabled = false;
+            this.helloLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helloLabel.ForeColor = System.Drawing.Color.Maroon;
             this.helloLabel.Location = new System.Drawing.Point(90, 75);
             this.helloLabel.Name = "helloLabel";
-            this.helloLabel.Size = new System.Drawing.Size(99, 13);
+            this.helloLabel.Size = new System.Drawing.Size(124, 13);
             this.helloLabel.TabIndex = 1;
             this.helloLabel.Text = "Hello, Visual World!";
+            this.helloLabel.Visible = false;
+            // 
+            // changeOutputButton
+            // 
+            this.changeOutputButton.Enabled = false;
+            this.changeOutputButton.Location = new System.Drawing.Point(99, 180);
+            this.changeOutputButton.Name = "changeOutputButton";
+            this.changeOutputButton.Size = new System.Drawing.Size(75, 23);
+            this.changeOutputButton.TabIndex = 2;
+            this.changeOutputButton.Text = "Click me last";
+            this.changeOutputButton.UseVisualStyleBackColor = true;
+            this.changeOutputButton.Click += new System.EventHandler(this.changeOutputButton_Click);
             // 
             // HelloForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 381);
+            this.Controls.Add(this.changeOutputButton);
             this.Controls.Add(this.helloLabel);
             this.Controls.Add(this.displayOutputButton);
             this.Name = "HelloForm";
@@ -71,6 +86,7 @@
 
         private System.Windows.Forms.Button displayOutputButton;
         private System.Windows.Forms.Label helloLabel;
+        private System.Windows.Forms.Button changeOutputButton;
     }
 }
 

@@ -25,6 +25,13 @@ namespace HelloVisualWorld
         private void displayOutputButton_Click(object sender, EventArgs e)
         {
             helloLabel.Visible = true;
+            changeOutputButton.Enabled = true;
+        }
+
+        private void changeOutputButton_Click(object sender, EventArgs e)
+        {
+            helloLabel.Text = "Goodbye!";
+            
         }
     }
 }
